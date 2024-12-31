@@ -1,14 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto 300px;
+  padding: 20px;
   text-align: center;
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
-  color: #888;
+  color: white;
 }

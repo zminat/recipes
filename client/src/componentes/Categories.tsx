@@ -1,7 +1,7 @@
 import * as React from "react";
 import axios from "axios";
 // import Table from "react-bootstrap/Table";
-import Category from "./Category";
+// import Category from "./Category";
 
 import "../styles/Categories.css";
 import {CategoryType} from "./Category.types.ts";
@@ -23,14 +23,27 @@ function Categories() {
                 });
         }
     }, [categories.length]);
+
     return (
-        <div>
-            {categories.map((category : CategoryType) => <Category key={category.id}
-                                                                   id={category.id}
-                                                                   name={category.name}
-                                                                   description={category.description}/>)}
+        <div className="categories-container">
+            {categories.map((category) => (
+                <div key={category.id} className="category-card">
+                    <div className="category-content">
+                        <h3>{category.name}</h3>
+                    </div>
+                </div>
+            ))}
         </div>
     );
+
+    // return (
+    //     <div className="categories-container">
+    //         {categories.map((category : CategoryType) => <Category key={category.id}
+    //                                                                id={category.id}
+    //                                                                name={category.name}
+    //                                                                description={category.description}/>)}
+    //     </div>
+    // );
 }
 
 export default Categories

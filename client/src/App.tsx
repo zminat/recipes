@@ -1,4 +1,3 @@
-import './App.css'
 import Categories from "./componentes/Categories"
 
 function App() {

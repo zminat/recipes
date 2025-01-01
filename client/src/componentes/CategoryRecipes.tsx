@@ -1,7 +1,7 @@
 import * as React from "react";
 import axios from "axios";
 
-// import "../styles/CategoryRecipes.css";
+import "../styles/CategoryRecipes.css";
 import { CategoryRecipeType } from "./CategoryRecipe.types.ts";
 import {useParams} from "react-router-dom";
 import CategoryRecipe from "./CategoryRecipe.tsx";

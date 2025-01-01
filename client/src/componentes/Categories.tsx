@@ -25,7 +25,7 @@ function Categories() {
     return (
         <div className="categories-container">
             {categories.map((category) => (
-                <Category id={category.id} name={category.name} />
+                <Category id={category.id} name={category.name}/>
             ))}
         </div>
     );

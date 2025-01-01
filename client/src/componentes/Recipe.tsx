@@ -1,4 +1,4 @@
-// import "../styles/Recipe.css";
+import "../styles/Recipe.css";
 import {RecipeType} from "./Recipe.types.ts";
 import * as React from "react";
 import {useParams} from "react-router-dom";
@@ -27,7 +27,14 @@ function Recipe() {
             <div className="recipe">
                 <div>
                     <h3>{recipe.name}</h3>
-                    <p>{recipe.text}</p>
+                    <p>
+                        {recipe.text.split('\n').map((line, index) => (
+                            <React.Fragment key={index}>
+                                {line}
+                                <br/>
+                            </React.Fragment>
+                        ))}
+                    </p>
                 </div>
             </div>
         );

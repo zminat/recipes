@@ -1,4 +1,4 @@
-.category-card {
+.recipe-card {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.category-card:hover {
+.recipe-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }

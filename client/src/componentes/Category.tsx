@@ -4,7 +4,9 @@ import {Link} from "react-router-dom";
 
 function Category(props:CategoryType) {
     return (
-        <Link to={`/categories/${props.id}`}>{props.name}</Link>
+        <div className={'category-card'}>
+            <Link to={`/categories/${props.id}`}>{props.name}</Link>
+        </div>
     )
 }
 

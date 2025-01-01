@@ -10,6 +10,12 @@ from api.serializers import CategorySerializer, RecipesTitleSerializer, RecipeSe
 def homepage(request):
     return render(request, 'index.html')
 
+def category(request, category_id):
+    return homepage(request)
+
+def recipe(request, recipe_id):
+    return homepage(request)
+
 
 class CategoryListView(APIView):
 

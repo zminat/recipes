@@ -11,3 +11,6 @@ class Recipe(models.Model):
     name = models.CharField(max_length=100)
     category = models.ManyToManyField(Category, related_name='recipes')
     text = models.TextField(verbose_name='Описание рецепта')
+
+    def __str__(self):
+        return self.name

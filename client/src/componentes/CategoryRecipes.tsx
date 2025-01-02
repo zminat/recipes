@@ -33,4 +33,4 @@ function CategoryRecipes() {
     );
 }
 
-export default CategoryRecipes
+export default CategoryRecipes;
